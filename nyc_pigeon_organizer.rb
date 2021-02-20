@@ -7,6 +7,11 @@ value.each.do |inner_key, names|
     if !final_array[name]
       finally[name]={}
 end
+if !final_array[name][key]
+  !final_array[name][key]=[]
+end
+final_array[name][key].push(inner_key)
+end
 end
  final_array 
 end
